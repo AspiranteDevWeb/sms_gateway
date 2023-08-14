@@ -15,6 +15,7 @@ export default function Card_user(){
                 <Text>Users List</Text>
                 <FlatList
                     data={usuarios}
+                    keyExtractor={(item)=> item.id.toString()}
                     renderItem={({item})=> 
                         <View style={styles.containerUsers}>
                             <Text>{item.nome}</Text>
