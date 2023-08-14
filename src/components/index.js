@@ -11,7 +11,7 @@ export default function Display_pages({stateButtonStart, viewState_StartButton, 
     return(
        <View style={styles.container}>
         { stateButtonStart === true ?  <Text style={styles.positive}>Currently listening</Text> : <Text style={styles.negative}>Not listening</Text>} 
-         <View>
+         <View style={styles.componentButton}>
             <Start_button viewState_StartButton={viewState_StartButton}/>
             <Stop_button viewState_StopButton={viewState_StopButton}/>
          </View>
@@ -24,8 +24,10 @@ export default function Display_pages({stateButtonStart, viewState_StartButton, 
 
 const styles = StyleSheet.create({
    container: {
-     flex: 1,
+     flex: 15,
      backgroundColor: 'white',
+     justifyContent:'center',
+     alignItems:'center',
     
    },
    positive:{
@@ -36,5 +38,12 @@ const styles = StyleSheet.create({
       backgroundColor:'red',
       color:'black',
    },
+   componentButton:{
+      flexDirection:'row',
+      justifyContent:'space-between',
+      marginTop:2,
+      marginBottom:4,
+      backgroundColor:'white'
+   }
  });
  

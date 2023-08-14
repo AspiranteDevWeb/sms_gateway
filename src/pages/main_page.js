@@ -19,8 +19,8 @@ export default function Main_page(){
 
 
     return(
-        <SafeAreaView>
-            <View>
+        <SafeAreaView style={styles.container}>
+            <View style={styles.header}>
                 <Display_pages 
                     stateButtonStart={stateButtonStart}
                     viewState_StartButton={viewState_StartButton}
@@ -28,10 +28,30 @@ export default function Main_page(){
                 />
             </View>
 
-            <View>
+            <View style={styles.body}>
                {stateButtonStart && <Card_user/>}
             </View>
         </SafeAreaView>
        
     )
 }
+
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: 'white',
+      flexDirection:'row'
+     
+    },
+    header:{
+       backgroundColor:'white',
+       marginTop:0,
+    },
+    body:{
+       backgroundColor:'white',
+       marginTop: 20,
+       
+    },
+
+  });
