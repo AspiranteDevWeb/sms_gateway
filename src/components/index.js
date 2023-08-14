@@ -16,7 +16,7 @@ export default function Display_pages({stateButtonStart, viewState_StartButton, 
             <Stop_button viewState_StopButton={viewState_StopButton}/>
          </View>
          <View>
-            ------------------------------
+            <Text>------------------------------</Text>
          </View>
        </View>
     )
