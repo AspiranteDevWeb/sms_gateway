@@ -1,18 +1,13 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React, {Component, useState, useEffect} from "react";
-
+import DATA from "../../db/db";
 export default function Card_mensage(){
 
-    const [message,setMessage]=useState([
-        {id:0 ,message: 'asdfghj', time:'',date:''},
-        {id: 1, nome: 'sdrtfgh',time:'',date:''},
-        {id:2, nome: 'swvdybcfvgb',time:'',date:''},
-        {id:3, nome: 'kjhfdxgbfa',time:'',date:''},
-        {id:4, nome: 'sdrtfgh',time:'',date:''},
-        {id:5, nome: 'swvdybcfvgb',time:'',date:''},
-        {id:6, nome: 'kjhfdxgbfa',time:'',date:''}
-] )
+    const [message,setMessage]=useState()
 
+    useEffect(()=>{
+        setMessage(DATA)
+    },[])
 
     return (
         <View style={style.container}>
@@ -20,6 +15,7 @@ export default function Card_mensage(){
 
             <FlatList
                     data={message}
+                    keyExtractor={(item)=> item.id.toString()}
                     renderItem={({item})=> 
                         <View style={style.containerMensage}>
                             <Text>{item.message}</Text>
