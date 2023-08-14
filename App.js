@@ -1,16 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import StackNavigator from './src/router/StackNavigator';
+
+//import * as Notifications from 'expo-notifications'
+
+
 
 export default function App() {
+
+  
+
+
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>OLA MUNDO !!!</Text>
-      <Text>Nada facil</Text>
+    
+    
       
-      
-    </View>
+      <StackNavigator/>
+    
   );
 }
 
