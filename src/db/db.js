@@ -1,23 +1,134 @@
 const DATA = [
     {
         "id":1,
-        "name": 'Person 1'
+        "name": 'Person 1',
+        "message":[
+            {"id":1 ,
+             "text": '',
+             "date": '',
+            },
+            {"id":2 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":3 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":4 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":5 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":6 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":7 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":8 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":9 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":10 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":11 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":12 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":13 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":14 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":15 ,
+            "text": '',
+            "date": '',
+            "time": '',
+            },
+                    ]
     },
     {
         "id": 2,
-         "nome": 'Person 7'
+         "nome": 'Person 7',
+         "message":[
+            {"id":1 ,
+             "text": '',
+             "date": '',
+            },
+            {"id":2 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":3 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":4 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":5 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":6 ,
+            "text": '',
+            "date": '',
+            },
+            {"id":7 ,
+            "text": '',
+            "date": '',
+            },
+        ]
     },
     {
         "id":3, 
-        "nome": 'Person 3'
+        "nome": 'Person 3',
+        "message":[
+            {"id":1 ,
+             "text": '',
+             "date": '',
+            }
+        ]
     },
     {
         "id":4, 
-        "nome": 'Person 3'
+        "nome": 'Person 3',
+        "message":[
+            {"id":1 ,
+             "text": '',
+             "date": '',
+            }
+        ]
     },
     {
         "id": 5, 
-        "nome": 'Person 2'
+        "nome": 'Person 2',
+        "message":[
+            {"id":1 ,
+             "text": '',
+             "date": '',
+            }
+        ]
     }
 ]
 
