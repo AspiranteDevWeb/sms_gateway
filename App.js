@@ -15,7 +15,10 @@ export default function App() {
     
     
       
-      <StackNavigator/>
+      <View style={styles.container}>
+        <StatusBar backgroundColor='white' barStyle='light-content'/>
+        <StackNavigator/>
+      </View>
     
   );
 }
@@ -24,7 +27,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+   
   },
 });
