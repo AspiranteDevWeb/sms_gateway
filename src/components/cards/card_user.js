@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     containerUsers:{
         backgroundColor:'white',
-        height:40,
+        height:20,
         margin:2,
         color:'black',
         justifyContent: 'center',

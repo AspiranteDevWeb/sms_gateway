@@ -16,7 +16,7 @@ export default function Display_pages({stateButtonStart, viewState_StartButton, 
             <Stop_button viewState_StopButton={viewState_StopButton}/>
          </View>
          <View>
-            <Text>------------------------------</Text>
+            <Text>Since 05/07/2023 -  11:32:09</Text>
          </View>
        </View>
     )
@@ -24,19 +24,19 @@ export default function Display_pages({stateButtonStart, viewState_StartButton, 
 
 const styles = StyleSheet.create({
    container: {
-     flex: 15,
+     flex: 1,
      backgroundColor: 'white',
      justifyContent:'center',
      alignItems:'center',
     
    },
    positive:{
-      backgroundColor:'green',
-      color:'black',
+      //backgroundColor:'green',
+      color:'green',
    },
    negative:{
-      backgroundColor:'red',
-      color:'black',
+      //backgroundColor:'red',
+      color:'red',
    },
    componentButton:{
       flexDirection:'row',

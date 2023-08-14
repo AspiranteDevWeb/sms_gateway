@@ -16,8 +16,8 @@ export default function App() {
     
       
       <View style={styles.container}>
-        <StatusBar backgroundColor='white' barStyle='light-content'/>
-        <StackNavigator/>
+        <StatusBar  backgroundColor='#0e806a' barStyle='light-content'/>
+        <StackNavigator style={{flex:1}}/>
       </View>
     
   );
@@ -25,9 +25,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection:'column',
-    backgroundColor: '#fff',
+    flex:1,
+   
    
   },
+
 });
