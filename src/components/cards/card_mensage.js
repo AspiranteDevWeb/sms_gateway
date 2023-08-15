@@ -33,7 +33,7 @@ const style= StyleSheet.create({
         justifyContent:'center'
     },
     containerMensage:{
-        height:40,
+        height:60,
         margin:2,
     }
 })

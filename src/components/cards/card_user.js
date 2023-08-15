@@ -50,13 +50,14 @@ const styles = StyleSheet.create({
         paddingBottom:3,
         backgroundColor:'#80bfff',
         height:60,
-        width:250,
-        margin:2,
+        width:350,
+        marginTop:10,
         marginBottom:5,
         color:'black',
         justifyContent: 'center',
         alignItems:'center',
         borderRadius:5,
+        
         
     },
     
