@@ -39,17 +39,22 @@ export default function Main_page(){
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: 'white',
-      flexDirection:'row'
+      flex: 5,
+      backgroundColor: 'black',
+      //flexDirection:'column',
+      //alignItems:'center',
+      //justifyContent:'space-between'
      
     },
     header:{
-       backgroundColor:'white',
+        flex: 1,
+       //backgroundColor:'blue',
+       //alignItems: 'center'
        //marginTop:0,
     },
     body:{
-       backgroundColor:'white',
+        flex: 3,
+       backgroundColor:'green',
        alignItems:'center'
        //marginTop: 20,
        

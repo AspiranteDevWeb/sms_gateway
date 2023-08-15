@@ -59,11 +59,7 @@ const styles = StyleSheet.create({
         borderRadius:5,
         
     },
-    button:{
-        marginBottom:30,
-        width:269,
-        backgroundColor:'blue',
-    },
+    
     cards_components:{
         color:'black',
         fontSize:22,
