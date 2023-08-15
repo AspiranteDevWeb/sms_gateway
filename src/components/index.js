@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
    container: {
      flex: 1,
      backgroundColor: 'white',
-     justifyContent:'center',
+     
      alignItems:'center',
     
    },
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
    componentButton:{
       flexDirection:'row',
       justifyContent:'space-between',
-      marginTop:2,
+      marginTop:1,
       marginBottom:4,
       backgroundColor:'white'
    }

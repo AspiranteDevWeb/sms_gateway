@@ -1,24 +1,37 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, TouchableHighlight, View } from "react-native";
 import React, {Component, useState, useEffect} from "react";
 import DATA from "../../db/db";
 
-export default function Card_user(){
+export default function Card_user({navigation}){
     
     const [usuarios,setUsuarios]=useState()
+    const [mensagem,setMensagem]=useState()
+    console.log(mensagem, 'o usuario e mensagens')
         
     useEffect (()=>{
         setUsuarios(DATA)
     },[])
+
+    const openMensageScreen= (item) =>{
+        setMensagem(item)
+       //navigation.navigate('mensage')
+    }
     
     return(
             <View style={styles.container}>
-                <Text>Users List</Text>
+                
                 <FlatList
                     data={usuarios}
                     keyExtractor={(item)=> item.id.toString()}
                     renderItem={({item})=> 
-                        <View style={styles.containerUsers}>
-                            <Text>{item.nome}</Text>
+                        <View 
+                        key={item.id}
+                         onTouchEnd={()=>openMensageScreen(item)}
+                         style={styles.containerUsers}
+                         >
+                            
+                                    <Text style={styles.cards_components}>{item.nome}</Text>
+                               
                         </View>
                     }
                 />
@@ -33,11 +46,31 @@ const styles = StyleSheet.create({
         flex:1,
     },
     containerUsers:{
-        backgroundColor:'white',
-        height:20,
+        paddingTop: 3,
+        paddingBottom:3,
+        backgroundColor:'#80bfff',
+        height:60,
+        width:250,
         margin:2,
+        marginBottom:5,
         color:'black',
         justifyContent: 'center',
-        alignItems:'center'
+        alignItems:'center',
+        borderRadius:5,
+        
+    },
+    button:{
+        marginBottom:30,
+        width:269,
+        backgroundColor:'blue',
+    },
+    cards_components:{
+        color:'black',
+        fontSize:22,
+        height:28,
+       // width:250,
+       alignItems:'center',
+       justifyContent:'center',
+       marginBottom:2,
     }
 })

@@ -2,12 +2,14 @@ import {StyleSheet, Text, View} from 'react-native'
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { createStackNavigator } from '@react-navigation/stack'
 //import Card_user from '../components/cards/card_user'
 import Card_mensage from '../components/cards/card_mensage'
 
 import Main_page from '../pages/main_page'
 
-
+//const Stack = createStackNavigator()
+//const Stack = createNativeStackNavigator()
 
 const StackNavigator = ()=>{
 
@@ -16,7 +18,7 @@ const StackNavigator = ()=>{
     return(
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Users" component={Main_page}/>
+                <Stack.Screen  name="Users" component={Main_page}/>
                 <Stack.Screen name="mensage" component={Card_mensage}/>
             </Stack.Navigator>
         </NavigationContainer>
@@ -25,4 +27,10 @@ const StackNavigator = ()=>{
 
 export default StackNavigator
 
-const style = StyleSheet.create({})
+const style = StyleSheet.create({
+    headerStyle:{
+        shadowOpacity:0,
+        elevation:0,
+        boxShadow:''
+    }
+})
