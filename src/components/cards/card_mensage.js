@@ -1,6 +1,7 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React, {Component, useState, useEffect} from "react";
 import DATA from "../../db/db";
+import { Button } from "react-native-elements";
 export default function Card_mensage(){
 
     const [message,setMessage]=useState()
@@ -11,17 +12,12 @@ export default function Card_mensage(){
 
     return (
         <View style={style.container}>
-            
+            <View>
+                <View><Text>name</Text></View>           
+               
+            </View>
 
-            <FlatList
-                    data={message}
-                    keyExtractor={(item)=> item.id.toString()}
-                    renderItem={({item})=> 
-                        <View style={style.containerMensage}>
-                            <Text>{item.message}</Text>
-                        </View>
-                    }
-                />
+           
         </View>
     )
 }

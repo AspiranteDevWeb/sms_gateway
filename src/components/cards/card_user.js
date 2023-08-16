@@ -14,7 +14,7 @@ export default function Card_user({navigation}){
 
     const openMensageScreen= (item) =>{
         setMensagem(item)
-       //navigation.navigate('mensage')
+       navigation.navigate('mensage')
     }
     
     return(

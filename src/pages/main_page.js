@@ -4,7 +4,7 @@ import Display_pages from "../components/index";
 import {StyleSheet, Text, View, TouchableOpacity, Float,SafeAreaView} from 'react-native'
 import Card_user from "../components/cards/card_user"
 
-export default function Main_page(){
+export default function Main_page({navigation}){
 
     const [stateButtonStart,setStateButtonStart] = useState(false)
     
@@ -29,7 +29,7 @@ export default function Main_page(){
             </View>
 
             <View style={styles.body}>
-               {stateButtonStart && <Card_user/>}
+               {stateButtonStart && <Card_user navigation={navigation}/>}
             </View>
         </View>
        

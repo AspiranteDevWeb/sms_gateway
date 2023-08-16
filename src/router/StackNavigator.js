@@ -9,11 +9,11 @@ import Card_mensage from '../components/cards/card_mensage'
 import Main_page from '../pages/main_page'
 
 //const Stack = createStackNavigator()
-//const Stack = createNativeStackNavigator()
+const Stack = createNativeStackNavigator()
 
 const StackNavigator = ()=>{
 
-    const Stack = createNativeStackNavigator()
+   // const Stack = createNativeStackNavigator()
 
     return(
         <NavigationContainer>
